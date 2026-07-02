@@ -1,0 +1,27 @@
+export const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Manish Rai",
+  jobTitle: "Full Stack Developer/Software Engineer",
+  url: "https://raimanish.com.np",
+  image: "https://raimanish.com.np/profile.webp",
+  address: {
+    "@type": "Kathmandu, Nepal",
+    addressCountry: "Nepal",
+  },
+  knowsAbout: [
+    "Node.js",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "PostgreSQL",
+    "Docker",
+    "AWS",
+    "MongoDB",
+    "Prisma",
+    "REST API",
+    "GraphQL",
+    "Microservices",
+    "CI/CD",
+  ],
+};

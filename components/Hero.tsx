@@ -77,14 +77,14 @@ export function Hero() {
           <span>Manish Rai</span>
         </h1>
 
-        <p
+        <h2
           className="mt-4 text-xl text-muted-foreground md:text-2xl animate-fade-up"
           style={{ animationDelay: "0.2s" }}
         >
           Full Stack Developer building with{" "}
           <span className="font-mono text-primary">{typed}</span>
           <span className="ml-0.5 inline-block w-[2px] h-5 md:h-6 bg-primary align-middle animate-blink" />
-        </p>
+        </h2>
 
         <p
           className="mx-auto mt-6 max-w-4xl text-balance text-base leading-relaxed text-muted-foreground animate-fade-up"

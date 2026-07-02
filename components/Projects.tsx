@@ -1,6 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import p1 from "@/public/appsha.png";
-import p2 from "@/public/project-1.jpg";
+import p2 from "@/public/drawly.png";
 import p3 from "@/public/project-1.jpg";
 import { SectionHeading } from "./SectionHeading";
 import Image from "next/image";
