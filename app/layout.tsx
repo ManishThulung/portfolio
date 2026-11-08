@@ -1,15 +1,27 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { DM_Mono, DM_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { websiteSchema } from "@/components/seo/website-schema";
 import { personSchema } from "@/components/seo/person-schema";
 import JsonLd from "@/components/seo/JsonLd";
 
-const jetBrainsMono = JetBrains_Mono({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-jetbrains",
+  variable: "--font-dm-sans",
+  display: "swap",
 });
+
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-dm-mono",
+  display: "swap",
+});
+// const jetBrainsMono = JetBrains_Mono({
+//   subsets: ["latin"],
+//   variable: "--font-jetbrains",
+// });
 
 export const metadata: Metadata = {
   title: {
@@ -100,7 +112,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", jetBrainsMono.variable)}
+      className={cn(
+        "h-full",
+        "antialiased",
+        dmSans.variable,
+        dmMono.variable,
+        // jetBrainsMono.variable,
+      )}
     >
       <body className="min-h-full flex flex-col">
         {children}
